@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/8fc11e56bc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main class="w-full flex">
+      <div class="w-2/5 bg-gray-100">
+        <div class="flex flex-col">
+          <div class="flex justify-between items-center py-5 pl-10 pr-5">
+            <h2 class="font-bold text-lg">Load Inbox</h2>
+            <div
+              class="flex items-center justify-center px-3 py-2 rounded-md bg-white cursor-pointer"
+            >
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex gap-10 border-gray-300 px-5">
+              <button
+                class="flex-1 pb-6 pt-2 text-center border-b-2 border-transparent focus:outline-none active-tab"
+                data-tab="all"
+              >
+                All
+                <span
+                  class="rounded-3xl bg-gray-300 px-3 py-1 text-black text-sm ml-1"
+                  >277</span
+                >
+              </button>
+
+              <button
+                class="flex-1 pb-6 pt-2 text-center border-b-2 border-transparent focus:outline-none"
+                data-tab="starred"
+              >
+                Starred
+                <span
+                  class="rounded-3xl bg-gray-300 px-3 py-1 text-black text-sm ml-1"
+                  >4</span
+                >
+              </button>
+              <button
+                class="flex-1 pb-6 pt-2 text-center border-b-2 border-transparent focus:outline-none"
+                data-tab="deleted"
+              >
+                Recently Deleted
+              </button>
+            </div>
+            <div id="tab-content" class="-mt-[3px] text-gray-700">
+              All items are shown here.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- here i want dynamic data -->
+      <div class="w-3/5">
+        <!-- top info -->
+        <div
+          class="max-w-[400px] mx-auto bg-white justify-center items-center flex py-5"
+        >
+          <div class="flex items-center gap-10">
+            <div class="flex flex-col gap-1">
+              <strong class="text-red-800 text-6xl">CA</strong>
+              <p>San Diego</p>
+            </div>
+            <span class="text-red-800 text-6xl">></span>
+            <div class="flex flex-col gap-1">
+              <strong class="text-red-800 text-6xl">MA</strong>
+              <p>San Diego</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full flex">
+          <div class="bg-red-800 flex-1 py-4 border-r border-white">
+            <div class="flex flex-col gap-1 items-center justify-center">
+              <p class="text-gray-300 font-normal">Rate</p>
+              <span class="text-white text-3xl font-bold">$4000</span>
+            </div>
+          </div>
+          <div class="bg-red-800 flex-1 py-4 border-r border-white">
+            <div class="flex flex-col gap-1 items-center justify-center">
+              <p class="text-gray-300 font-normal">Miles</p>
+              <span class="text-white text-3xl font-bold">2120</span>
+            </div>
+          </div>
+          <div class="bg-red-800 flex-1 py-4 border-r border-white">
+            <div class="flex flex-col gap-1 items-center justify-center">
+              <p class="text-gray-300 font-normal">Rpm</p>
+              <span class="text-white text-3xl font-bold">$1.89</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- bottom info -->
+
+        <div class="w-full flex gap-4 p-3">
+          <!-- პირველი სვეტი -->
+          <div class="flex-1">
+            <!-- <h3 class="text-red-700 text-lg border-b border-gray-400 mb-4">
+              Contact
+            </h3> -->
+            <div class="flex flex-col gap-2">
+              <div class="flex gap-2">
+                <h4 class="text-gray-400">Name:</h4>
+                <span>Bob</span>
+              </div>
+
+              <div class="flex gap-2">
+                <h4 class="text-gray-400">OrderId:</h4>
+                <span>311314213421</span>
+              </div>
+
+              <div class="flex gap-2">
+                <h4 class="text-gray-400">Distance:</h4>
+                <span>1426miles</span>
+              </div>
+
+              <div class="flex gap-2">
+                <h4 class="text-gray-400">Vehicle Count:</h4>
+                <span>1</span>
+              </div>
+
+              <div class="flex gap-2">
+                <h4 class="text-gray-400">Pick-up Date:</h4>
+                <span>10/14/2024</span>
+              </div>
+
+              <div class="flex gap-2">
+                <h4 class="text-gray-400">Pick-up Date:</h4>
+                <span>M-Sat 7-7</span>
+              </div>
+
+              <div class="flex gap-2">
+                <h4 class="text-gray-400">Pay Terms:</h4>
+                <span></span>
+              </div>
+
+              <div class="flex gap-2">
+                <h4 class="text-gray-400">Pay Terms:</h4>
+                <span>nothing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- მეორე სვეტი -->
+          <div class="flex-1">
+            <!-- <h3 class="text-red-700 text-lg border-b border-gray-400 mb-4">
+              Load
+            </h3> -->
+
+            <div class="flex flex-col gap-2">
+              <div class="flex gap-2">
+                <h4 class="text-gray-400">O:</h4>
+                <span>landisville, PA 17538</span>
+              </div>
+
+              <div class="flex gap-2">
+                <h4 class="text-gray-400">D:</h4>
+                <span>irving, TX 75061</span>
+              </div>
+
+              <div class="flex gap-2">
+                <h4 class="text-gray-400">Shipper:</h4>
+                <span>Anew Transport</span>
+              </div>
+
+              <div class="flex gap-2">
+                <h4 class="text-gray-400">Max weight:</h4>
+                <span>4449</span>
+              </div>
+              <div class="flex gap-2">
+                <h4 class="text-gray-400">Delivery Date:</h4>
+                <span>10/14/2024</span>
+              </div>
+              <div class="flex gap-2">
+                <h4 class="text-gray-400">Play Time:</h4>
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- მესამე სვეტი -->
+          <div class="flex-1">
+            <!-- <h3 class="text-red-700 text-lg border-b border-gray-400">
+              Company
+            </h3> -->
+
+            <div class="flex flex-col gap-2">
+              <div class="flex gap-2">
+                <h4 class="text-gray-400">Age:</h4>
+                <span>27</span>
+              </div>
+
+              <div class="flex gap-2">
+                <h4 class="text-gray-400">Total Pay:</h4>
+                <span>1800$</span>
+              </div>
+
+              <div class="flex gap-2">
+                <h4 class="text-gray-400">Rate/mile:</h4>
+                <span>1.26$</span>
+              </div>
+
+              <div class="flex gap-2">
+                <h4 class="text-gray-400">Phone:</h4>
+                <span>+995 598911452</span>
+              </div>
+
+              <div class="flex gap-2">
+                <h4 class="text-gray-400">Tier Group:</h4>
+                <span>Broker</span>
+              </div>
+
+              <div class="flex gap-2">
+                <h4 class="text-gray-400">Old Rating:</h4>
+                <span>99.9(1378)</span>
+              </div>
+
+              <div class="flex gap-2">
+                <h4 class="text-gray-400">Pay Method:</h4>
+                <span>Cash</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full mt-20 gap-4 p-3">
+          <div class="w-full border-b border-gray-400 text-red-700">
+            Comments
+          </div>
+
+          <p class="mt-1">
+            commenta in Charles du Fresne du Cange’s Glossarium Mediæ et Infimæ
+            Latinitatis (augmented edition with additions by D. P. Carpenterius,
+            Adelungius and others, edited by Léopold Favre, 1883–1887)
+          </p>
+        </div>
+
+        <div class="w-full mt-20 gap-4 p-3">
+          <div class="w-full border-b border-gray-400 text-red-700">Notes</div>
+          <p>
+            commenta in Charles du Fresne du Cange’s Glossarium Mediæ et Infimæ
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
