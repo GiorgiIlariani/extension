@@ -40,3 +40,10 @@ button:hover {
 .dispatch-info:hover {
   background-color: white;
 }
+
+@media (min-width: 1024px) {
+  /* lg breakpoint */
+  .expand-icon {
+    display: none !important;
+  }
+}
