@@ -78,7 +78,10 @@
                 Recently Deleted
               </button>
             </div>
-            <div id="tab-content" class="-mt-[3px] text-gray-700">
+            <div
+              id="tab-content"
+              class="h-[100vh] overflow-y-auto custom-scrollbar overflow-x-hidden px-5 text-gray-700"
+            >
               All items are shown here.
             </div>
           </div>
@@ -86,7 +89,10 @@
       </div>
 
       <!-- Right-side container for details -->
-      <div id="details-container" class="w-full lg:w-3/5 hidden lg:block"></div>
+      <div
+        id="details-container"
+        class="w-full lg:w-3/5 hidden h-[100vh] overflow-y-auto overflow-x-hidden lg:block no-scrollbar"
+      ></div>
     </main>
 
     <script type="module" src="./script.js"></script>
