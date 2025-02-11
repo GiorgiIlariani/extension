@@ -364,7 +364,7 @@ export const dispatchData = [
     availableDate: "2025-02-11T00:00:00",
     createdDate: "2025-02-11T10:11:18Z",
     destination: {
-      city: "GREATER LANDOVER",
+      city: "LANDOVER",
       geoCode: {
         latitude: 38.92274,
         longitude: -76.887691,
